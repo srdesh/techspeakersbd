@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mozilla TechSpeaker Bangladesh</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="bootstrap.min.css">
+
+      <!--================================CSS====================================!-->
+      <style>
+      body{
+        margin: 0 0 0 0;
+      }
+      .zero-padding{
+        padding:0;
+      }
+      #ts_icon{
+        height: 100px;
+      }
+      .custom-button-paste{
+        border: none;
+        width: 100px;
+        color: #009999;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      .custom-button-paste:hover{
+        background-color: #006666;
+        color: #ffffff;
+      }
+      .custom-button-paste:active{
+        background-color: #ffffff;
+        color: #009999;
+      }
+      .custom-button-blue{
+        border: none;
+        width: 100px;
+        color: #3399CC;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      .custom-button-blue:hover{
+        background-color: #006699;
+        color: #ffffff;
+      }
+      .custom-button-blue:active{
+        background-color: #ffffff;
+        color: #009999;
+      }
+      .custom-footer{
+        line-height: 50px;
+      }
+      /*---------------parallax--------------*/
+      .hsContainer {
+          display: table;
+          table-layout: fixed;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          position: relative;
+          opacity: 1;
+      }
+      .hsContent {
+          max-width: 450px;
+          margin: -150px auto 0 auto;
+          display: table-cell;
+          vertical-align: middle;
+          color: #ebebeb;
+          padding: 0 8%;
+          text-align: center;
+      }
+      .bcg {
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          height: 100%;
+          width: 100%;
+      }
+      #slide-1 .bcg {
+        background-image:url('img/back-2.jpg');
+        height: 700px;
+      }
+      #slide-2 .bcg {
+        background-image:url('img/back-1.jpg');
+        height: 700px;
+      }
+
+      </style>
+
+
+</head>
+
+<body>
+      <div class="container-fluid zero-padding">
+	        <section id="slide-1">
+	        	<div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+		        	<div class="hsContainer">
+			    		<div class="hsContent" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1">
+                <h3 style="color:#006666;" class="myCountdown" data-date="Nov 19, 2016 21:26:25"></h3>
+                <h1><b>WebTech Talk</b></h1>
+				    		<h3>19th November, 2016 From 12:00PM to 04:00PM @NewsCred</h3>
+                <button type="button" class="btn btn-default custom-button-paste" onclick="window.location.href='https://goo.gl/KmqOiF'">Venue</button>
+                <button type="button" class="btn btn-default custom-button-paste" onclick="window.location.href='https://public.etherpad-mozilla.org/p/remo-webtech-talk'">Details</button>
+			    		</div>
+		        	</div>
+	        	</div>
+		        </section>
+            <section id="slide-2">
+  	        	<div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-2">
+  		        	<div class="hsContainer">
+  			    		<div class="hsContent" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2">
+                  <img id="ts_icon" src="img/ts.png"/>
+                  <h2>Mozilla Tech Speaker Bangladesh</h2>
+  				    		<p>Mozilla Tech Speaker Bangladesh is a contributional pathway of Mozilla Bangladesh Community.
+                  Open Web, Open Source, Privacy and Mozilla Products as well as technologies are the top priority discussing,
+                  practicing and speech giving topics in this pathway. Getting interested?</p>
+                  <button type="button" class="btn btn-default custom-button-blue" onclick="window.location.href='https://www.facebook.com/groups/163388420702353/'">Join Us</button>
+  			    		</div>
+  		        	</div>
+  	        	</div>
+  		        </section>
+        </div>
+
+        <div style="background-color: black;" class="container-fluid zero-padding text-center footer custom-footer">
+          <p><i>-from <b>mozilla</b> with Love-</i></p>
+        </div>
+
+
+        <!--============================================javascript==========================================================!-->
+        <script src="js/2.1.3jquery.min.js"></script>
+        <!--Parallax!-->
+        <script src="js/skrollr.js"></script>
+        <!--bootstrap!-->
+        <script src="js/bootstrap.min.js"></script>
+        <!--countdown timer!-->
+        <script type="text/javascript" src="js/jquery.countdown.js"></script>
+
+
+        <script type="text/javascript">
+        $(function() {
+            $('.myCountdown').countdown({
+                date: "Nov 18, 20:03:25"
+            });
+        });
+        </script>
+
+</body>
+
+</html>
